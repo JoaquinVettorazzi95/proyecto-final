@@ -1,9 +1,15 @@
 {% extends 'ejemplo/base.html' %}
-{% block titulo%} Lista de todos mis Familiares {% endblock %}
 {% block contenido %}
-  {% for familiar in lista_familiares %}
-      <ul>
-          <li> Nombre: {{familiar.nombre}}, Dirección: {{familiar.direccion}}, Pasaporte: {{familiar.numero_pasaporte}}</li>
-      </ul>
-  {% endfor %}
+{% for familiar in lista_familiares %}
+<ul>
+    <li> Nombre: {{familiar.nombre}}, Dirección: {{familiar.direccion}}, Pasaporte: {{familiar.numero_pasaporte}}
+        <!-- Esto agrega un link al form de actulización-->
+        <a href='actualizar/{{ familiar.id }}'>Actualizar</a>
+    </li>
+</ul>
+{% endfor %}
+{%endblock %}
+
+{% block titulo%}
+Lista de todos mis Familiares
 {% endblock %}
