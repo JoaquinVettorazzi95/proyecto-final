@@ -79,7 +79,7 @@ class AltaFamiliar(View):
 
 class ActualizarFamiliar(View):
   form_class = FamiliarForm
-  template_name = 'ejemplo/actualizar_familiar.html'
+  template_name = 'ejemplo/actualizar_modelo.html'
   initial = {"nombre":"", "direccion":"", "numero_pasaporte":""}
   
   # prestar atención ahora el method get recibe un parametro pk == primaryKey == identificador único

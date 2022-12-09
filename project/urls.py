@@ -27,6 +27,6 @@ urlpatterns = [
     path('mi-familiar/', mostrar_familiares),
     path('mi-familia/buscar', BuscarFamiliar.as_view()),
     path('mi-familia/alta', AltaFamiliar.as_view()),
-    path('mi-familia/actualizar/<int:pk>', ActualizarFamiliar.as_view()),
+    path('mi-familiar/actualizar/<int:pk>', ActualizarFamiliar.as_view()),
 
 ]
